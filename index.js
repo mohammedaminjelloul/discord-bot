@@ -29,17 +29,17 @@ client.user.setActivity('EGSG BY MONCEF#1125', {type : 'PLAYING' } )
   const kawafelEmbed = new MessageEmbed()
 	.setColor('#fff73f')
 	.setTitle("```" +"دمت اهلا وحللت سهلا - Welcome to our discord server"+"```")
-  .addField(message, member.guild.channels.cache.get('956527372021149739').toString(), true)
+  .addField(message, member.guild.channels.cache.get('channel id here ').toString(), true)
   .setAuthor({ name: " مرحبا "+member.displayName, iconURL: member.displayAvatarURL()})
 
-  .setImage('https://i.imgur.com/llZm2rl.png')
+  .setImage('image link ')
 
 	.setDescription("●▬▬▬▬▬▬▬▬●●▬▬▬▬▬▬▬▬●")
   .setTimestamp()
   const azr="<@"+member.id+">"
   
-  member.guild.channels.cache.get('956527372021149736').send({ embeds: [kawafelEmbed]}); 
-  member.guild.channels.cache.get('956527372021149736').send(azr); 
+  member.guild.channels.cache.get('channel id ').send({ embeds: [kawafelEmbed]}); 
+  member.guild.channels.cache.get('channel id').send(azr); 
 
 
 
@@ -52,17 +52,17 @@ client.on('guildMemberAdd', async member => {
   const kawafelEmbed = new MessageEmbed()
 	.setColor("#fff73f")
 
-  .addField( welcome, member.guild.channels.cache.get('956527372021149739').toString(), true)
+  .addField( welcome, member.guild.channels.cache.get('channel id ').toString(), true)
   .setAuthor({ name: " مرحبا "+member.displayName, iconURL: member.displayAvatarURL()})
   /* .setThumbnail('https://i.imgur.com/tCXYMAA.png') */
-  .setImage('https://i.imgur.com/llZm2rl.png')
+  .setImage('image link')
 
 	/* .setDescription("دمت اهلا وحللت سهلا - Welcome to our discord server \n Make sure to check the rules at - تأكد من مراجعة القواعد في") */
   .setTimestamp()
   const azr="<@"+member.id+">"
   try {
 		
-		const webhook = new WebhookClient({ url: 'https://discord.com/api/webhooks/968671016266125322/VSahtE6j3gbcpW3WD4tBQqjPi0ThQ91kk0QKo6PrJpU3lOIck_XyiJeBCq99xpxn2x-6' });
+		const webhook = new WebhookClient({ url: 'webhook link' });
 
 		if (!webhook) {
 			return console.log('No webhook was found that I can use!');
@@ -76,8 +76,8 @@ client.on('guildMemberAdd', async member => {
 		console.error('Error trying to send a message: ', error);
 	}
   
-/*   member.guild.channels.cache.get('966826511304888330').send({ embeds: [kawafelEmbed]}); 
-  member.guild.channels.cache.get('966826511304888330').send(azr);  */
+/*   member.guild.channels.cache.get('channel id').send({ embeds: [kawafelEmbed]}); 
+  member.guild.channels.cache.get('channel id').send(azr);  */
 
 
 
@@ -123,12 +123,12 @@ client.on('messageCreate', message => {
     let result1 = args.substring(c+1, d);
     
     if(result1.length != 18 && result1 !=""){
-      result1='956527372448972841'
+      result1='channel id'
        message.guild.channels.cache.get(result1).send('مشكلة في ال channel ID')
 
     }
     else if(result1.length != 18 && result1==""){
-        result1='956527372021149745'
+        result1='random channel id '
     };
     var args = message.content.slice(d+1);
     const exampleEmbed = new MessageEmbed()
@@ -191,12 +191,12 @@ client.on('messageCreate', message => {
     let result1 = args.substring(c+1, d);
     let imageID = args.substring(e+1, f);
     if(result1.length != 18 && result1 !=""){
-      result1='956527372448972841'
+      result1='channel id'
        message.guild.channels.cache.get(result1).send('مشكلة في ال channel ID')
 
     }
     else if(result1.length != 18 && result1==""){
-        result1='956527372021149745'
+        result1='random channel id'
     };
     var args = message.content.slice(f+1);
     const exampleEmbed = new MessageEmbed()
@@ -208,4 +208,4 @@ client.on('messageCreate', message => {
     
     ;}
 });
-client.login('OTY2NzU3NDY0NjI2MzE5NDUw.YmGZDQ.u2JLW6t1AUecAB8GFdOoBHroinY');
+client.login('bot id ');
